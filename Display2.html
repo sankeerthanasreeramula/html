@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<title>Display user Details</title>
+<script>
+function display()
+{
+	let fname,lname,dob;
+	fname=document.getElementById("fname").value;
+	lname=document.getElementById("lname").value;
+	dob=document.getElementById("dob").value;
+	document.writeln(fname);
+	document.writeln(lname);
+	document.writeln(dob);
+}
+</script>
+</head>
+<body>
+<form onsubmit="display()">
+<table>
+<tr>
+<th>Firstname</th>
+<td><input type="text" id="fname"/></td>
+</tr>
+<tr>
+<th>Lastname</th>
+<td><input type="text" id="lname"/><td>
+</tr>
+<tr>
+<th>Date of birth</th>
+<td><input type="date" id="dob"/></td>
+</tr>
+<tr>
+<td><input type="submit" value="Submit"/></td>
+<td><input type="reset" value="Clear"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+	
